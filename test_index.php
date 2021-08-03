@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/autoload.php';
+require_once __DIR__ . '/bootstrap.php';
 
 use RandomUser\RandomUser;
 
@@ -9,6 +9,7 @@ $params = [
     'gender'    => 'male',
     'password'  => 'CHARSETS,MAX_LENGTH',
 ];
+
 $randomUser = new RandomUser($params);
 $getResult = $randomUser->get()->tojson();
 

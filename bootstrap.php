@@ -30,6 +30,9 @@ if( ! extension_loaded('json') )
 }
 
 /**
- * Load bootstrap file
+ * Load all class files
  */
- require_once __DIR__ . '/RandomUser/bootstrap.php';
+
+ require_once __DIR__ . '/RandomUser/Config.php';
+ require_once __DIR__ . '/RandomUser/Requestor.php';
+ require_once __DIR__ . '/RandomUser/RandomUser.php';
